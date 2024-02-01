@@ -9,31 +9,71 @@ class HomeScreen extends StatelessWidget {
         body: SafeArea(
             child: Container(
                 color: Colors.black,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Container(
-                      color: Colors.red,
-                      width: 50.0,
-                      height: 50.0,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          color: Colors.red,
+                          width: 50,
+                          height: 50,
+                        ),
+                        Container(
+                          color: Colors.orange,
+                          width: 50,
+                          height: 50,
+                        ),
+                        Container(
+                          color: Colors.yellow,
+                          width: 50,
+                          height: 50,
+                        ),
+                        Container(
+                          color: Colors.green,
+                          width: 50,
+                          height: 50,
+                        ),
+                      ],
                     ),
                     Container(
                       color: Colors.orange,
-                      width: 50.0,
-                      height: 50.0,
+                      width: 50,
+                      height: 50,
                     ),
-                    Container(
-                      color: Colors.yellow,
-                      width: 50.0,
-                      height: 50.0,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                          color: Colors.red,
+                          width: 50,
+                          height: 50,
+                        ),
+                        Container(
+                          color: Colors.orange,
+                          width: 50,
+                          height: 50,
+                        ),
+                        Container(
+                          color: Colors.yellow,
+                          width: 50,
+                          height: 50,
+                        ),
+                        Container(
+                          color: Colors.green,
+                          width: 50,
+                          height: 50,
+                        ),
+                      ],
                     ),
                     Container(
                       color: Colors.green,
-                      width: 50.0,
-                      height: 50.0,
-                    ),
+                      width: 50,
+                      height: 50,
+                    )
                   ],
                 ))));
   }
